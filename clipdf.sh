@@ -4,8 +4,8 @@ printf "$STR"
 echo "$currentDirectory"
 read filePath
 echo $filePath
-filePathh="${filePath:0:-4}.txt"
-echo $filePathh
-pdftotext "./$filePath"
-less -f "./$filePathh"
-rm "./$filePathh"
+filePath2="${filePath:0:-4}.txt"
+echo $filePath2
+pdftotext "./$filePath2"
+less -f "./$filePath2"
+rm "./$filePath2"
